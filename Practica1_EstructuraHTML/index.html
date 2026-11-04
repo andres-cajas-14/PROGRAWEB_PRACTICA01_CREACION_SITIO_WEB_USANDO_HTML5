@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Vehículos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <h1 id="titulo-principal">Centro de Vehículos</h1>
+        <p>Conoce diferentes marcas de vehículos.</p>
+    </header>
+
+    
+    <div class="contenedor"> 
+        <nav>
+            <h2>Menú de navegación</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Carro_Ford.html">Ford</a></li>
+                <li><a href="Carro_Mazda.html">Mazda</a></li>
+                <li><a href="Carro_Suzuki.html">Suzuki</a></li>
+                <li><a href="Carro_Toyota.html">Toyota</a></li>
+            </ul>
+        </nav>
+    
+
+        
+        <main>
+
+            <section>
+                <h2>Bienvenidos</h2>
+
+                <p>
+                    En nuestro sitio web encontrarás información
+                    sobre diferentes <strong>marcas de vehículos</strong>.
+                </p>
+
+                <p>
+                    Explora las características de Ford, Mazda,
+                    Suzuki y Toyota.
+                </p>
+
+                <figure>
+                    <img src="Imagenes/general.jpg"
+                        alt="Imagen general de vehículos"
+                        width="450">
+
+                    <figcaption>
+                        Conoce nuestro mundo de vehículos.
+                    </figcaption>
+                </figure>
+            </section>
+                        <section>
+                <h2>Marcas de vehículos</h2>
+
+                <p>
+                    Selecciona una marca para conocer más información.
+                </p>
+
+                
+                <div class="contenedor-tarjetas">
+
+                    
+                    <article class="tarjeta">
+                        <h3>Ford</h3>
+                        <p>Conoce los vehículos de la marca Ford.</p>
+                        <a href="Carro_Ford.html">Ver Ford</a>
+                    </article>
+
+                    
+                    <article class="tarjeta">
+                        <h3>Mazda</h3>
+                        <p>Conoce los vehículos de la marca Mazda.</p>
+
+                        <a href="Carro_Mazda.html">
+                            <img src="Imagenes/mazda2.jpg"
+                                alt="Ver vehículos Mazda"
+                                width="300">
+                        </a>
+                    </article>
+
+                    
+                    <article class="tarjeta">
+                        <h3>Suzuki</h3>
+                        <p>Conoce los vehículos de la marca Suzuki.</p>
+                        <a href="Carro_Suzuki.html">Ver Suzuki</a>
+                    </article>
+
+                    
+                    <article class="tarjeta">
+                        <h3>Toyota</h3>
+                        <p>Conoce los vehículos de la marca Toyota.</p>
+                        <a href="Carro_Toyota.html">Ver Toyota</a>
+                    </article>
+
+                </div>
+            </section>
+
+            
+
+            <section>
+                <h2>Visita nuestras páginas</h2>
+
+                <p>
+                    Descubre las diferentes marcas y
+                    <em>encuentra información de tu interés</em>.
+                </p>
+
+                <p>
+                    Puedes navegar utilizando el menú superior.<br>
+                    También puedes seleccionar los enlaces de cada marca.
+                </p>
+            </section>
+
+
+            
+            <section>
+                <h2>Formulario de contacto</h2>
+
+                <p>
+                    Completa el siguiente formulario para enviarnos
+                    tus consultas sobre los vehículos.
+                </p>
+
+                <form action="PaginaPHP/procesar_contacto.php" method="POST">
+
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+
+                        
+                        <label for="nombre">Nombre:</label>
+                        <input type="text"
+                               id="nombre"
+                               name="nombre"
+                               required>
+
+                        
+                         
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email"
+                                id="correo"
+                                name="correo"
+                                maxlength="100"
+                                required>
+
+                        
+                        <label for="asunto">Asunto:</label>
+                        <input type="text"
+                               id="asunto"
+                               name="asunto"
+                               required>
+
+                        
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje"
+                                  name="mensaje"
+                                  rows="5"
+                                  required></textarea>
+
+                        
+                        <button type="submit">Enviar mensaje</button>
+
+                    </fieldset>
+
+                </form>
+            </section>
+            
+
+        </main>
+    </div>
+
+
+    
+    <footer>
+        <p>Autor: Carlos Cajas</p>
+
+        <p>
+            Correo:
+            <a href="mailto:ccajast@est.ups.edu.ec">
+                ccajast@est.ups.edu.ec
+            </a>
+        </p>
+
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
